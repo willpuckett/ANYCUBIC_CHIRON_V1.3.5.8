@@ -51,7 +51,7 @@
     #define Z_DIR_PIN          48
     #define Z_ENABLE_PIN       62
     #define Z_MIN_PIN          18
-    #define Z_MAX_PIN        43 // 19
+    #define Z_MAX_PIN          43 // 19
 //  #define Z_MAX_PIN          -1
 
 #ifndef Z_MIN_PROBE_PIN
@@ -79,17 +79,17 @@
     #define SDSS               53
     #define LED_PIN            13
 
-    #define FAN_PIN            9 // (Sprinter config)
-    #define FAN2_PIN          -1// 44
-    #define V5_COOLING_PIN           44
+    #define FAN_PIN             9 // (Sprinter config)
+    #define FAN2_PIN           -1// 44
+    #define V5_COOLING_PIN     44
 
-  #define CONTROLLERFAN_PIN    7
+  #define CONTROLLERFAN_PIN     7
   #ifdef OutageTest
           #define OUTAGETEST_PIN       79
           #define OUTAGECON_PIN        58
   #endif
 
-  #define PS_ON_PIN        -1 // 12 NOT USE
+  #define PS_ON_PIN            11 // 12 NOT USE
 
     
    #define  BEEPER_PIN 31

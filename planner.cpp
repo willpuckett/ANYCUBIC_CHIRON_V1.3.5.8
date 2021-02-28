@@ -508,7 +508,7 @@ void Planner::check_axes_activity() {
       #endif
     #else
       #if HAS_FAN0
-        analogWrite(FAN_PIN, CALC_FAN_SPEED(0));
+        analogWrite(FAN_PIN, 255 - CALC_FAN_SPEED(0));
       #endif
       #if HAS_FAN1
         analogWrite(FAN1_PIN, CALC_FAN_SPEED(1));

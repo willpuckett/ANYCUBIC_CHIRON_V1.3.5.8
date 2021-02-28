@@ -51,7 +51,7 @@
  */
 #define CONFIGURATION_H_VERSION 010100
 
-#define MSG_MY_VERSION "V1.3.0"
+#define MSG_MY_VERSION "V1.3.5.8"
 
 #define OutageTest  //断电续打
 
@@ -93,7 +93,7 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_CONFIG_H_AUTHOR "(Jolly, xxxxxxxx.CO.)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(WGP)" // Who made the changes.
 //#define SHOW_BOOTSCREEN
 //#define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
 //#define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
@@ -197,12 +197,12 @@
  *
  * :{ 0:'No power switch', 1:'ATX', 2:'X-Box 360' }
  */
-#define POWER_SUPPLY 0
+#define POWER_SUPPLY 2
 
 #if POWER_SUPPLY > 0
   // Enable this option to leave the PSU off at startup.
   // Power to steppers and heaters will need to be turned on with M80.
-  //#define PS_DEFAULT_OFF
+  #define PS_DEFAULT_OFF
 #endif
 
 // @section temperature
@@ -522,7 +522,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
   */
 //#define DEFAULT_MAX_ACCELERATION      { 9000, 9000, 60, 10000 }
-#define DEFAULT_MAX_ACCELERATION      { 350, 350, 50, 30000 }
+#define DEFAULT_MAX_ACCELERATION      { 350, 350, 50, 500 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -535,8 +535,8 @@
 //#define DEFAULT_TRAVEL_ACCELERATION   3000    // X, Y, Z acceleration for travel (non printing) moves
 
 #define DEFAULT_ACCELERATION          350    // X, Y, Z and E acceleration for printing moves
-#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   350    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_RETRACT_ACCELERATION  500    // E acceleration for retracts
+#define DEFAULT_TRAVEL_ACCELERATION   500    // X, Y, Z acceleration for travel (non printing) moves
 
 
 /**
@@ -549,7 +549,7 @@
 #define DEFAULT_XJERK                 4
 #define DEFAULT_YJERK                 4
 #define DEFAULT_ZJERK                 0.4
-#define DEFAULT_EJERK                 20
+#define DEFAULT_EJERK                 10
 
 
 
@@ -713,14 +713,14 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR  true
-#define INVERT_Y_DIR  true
-#define INVERT_Z_DIR true
+#define INVERT_X_DIR  false
+#define INVERT_Y_DIR  false
+#define INVERT_Z_DIR  false
 
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR true
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false

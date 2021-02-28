@@ -1666,13 +1666,13 @@ void setupMyZoffset()
 void SetUpFAN2_PIN()
 {
     SET_OUTPUT(V5_COOLING_PIN);
-    WRITE(V5_COOLING_PIN, LOW);  
+    WRITE(V5_COOLING_PIN, HIGH);  
 }
 void Fan2Scan()
 {
-  if(thermalManager.degHotend(0)>65)
-  WRITE(V5_COOLING_PIN, HIGH);
-  else WRITE(V5_COOLING_PIN, LOW);
+  if(thermalManager.degHotend(0)>69)
+  WRITE(V5_COOLING_PIN, LOW);
+  else WRITE(V5_COOLING_PIN, HIGH);
 }
 
 void TFT_Commond_Scan()
@@ -10942,7 +10942,7 @@ void prepare_move_to_destination() {
 
       // allows digital or PWM fan output to be used (see M42 handling)
       digitalWrite(CONTROLLERFAN_PIN, speed);
-      analogWrite(CONTROLLERFAN_PIN, speed);
+      analogWrite(CONTROLLERFAN_PIN, 255 - speed);
     }
   }
 

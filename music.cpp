@@ -19,24 +19,24 @@ int timercount[]=
 };
 
 int printdone[]={
-NOTE_F7,
-NOTE_C7,
-NOTE_D7,
-NOTE_E7,
-NOTE_D7,
-NOTE_C7,
-NOTE_B6,
+//NOTE_F7,
+//NOTE_C7,
+//NOTE_D7,
+//NOTE_E7,
+//NOTE_D7,
+//NOTE_C7,
+//NOTE_B6,
 0,  
 };
 
 int melody[] = {
-NOTE_F7,
-NOTE_C7,
-NOTE_D7,
-NOTE_E7,
-NOTE_D7,
-NOTE_G7,
-NOTE_A7,
+//NOTE_F7,
+//NOTE_C7,
+//NOTE_D7,
+//NOTE_E7,
+//NOTE_D7,
+//NOTE_G7,
+//NOTE_A7,
 0,
 };
 
