@@ -1671,7 +1671,7 @@ void SetUpFAN2_PIN()
 void Fan2Scan()
 {
   if(thermalManager.degHotend(0)>69)
-  WRITE(V5_COOLING_PIN, LOW);
+  WRITE(V5_COOLING_PIN, 64);
   else WRITE(V5_COOLING_PIN, HIGH);
 }
 
