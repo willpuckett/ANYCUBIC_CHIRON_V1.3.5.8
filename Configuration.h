@@ -522,7 +522,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
   */
 //#define DEFAULT_MAX_ACCELERATION      { 9000, 9000, 60, 10000 }
-#define DEFAULT_MAX_ACCELERATION      { 500, 500, 50, 500 }
+#define DEFAULT_MAX_ACCELERATION      { 350, 350, 50, 350 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -535,8 +535,8 @@
 //#define DEFAULT_TRAVEL_ACCELERATION   3000    // X, Y, Z acceleration for travel (non printing) moves
 
 #define DEFAULT_ACCELERATION          350    // X, Y, Z and E acceleration for printing moves
-#define DEFAULT_RETRACT_ACCELERATION  400    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   400    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_RETRACT_ACCELERATION  350    // E acceleration for retracts
+#define DEFAULT_TRAVEL_ACCELERATION   350    // X, Y, Z acceleration for travel (non printing) moves
 
 
 /**
